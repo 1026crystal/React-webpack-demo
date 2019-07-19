@@ -1,5 +1,11 @@
 React提供了create-react-app的快速构建工具, 但是面对复杂的项目, 入门级的构建工具, 是远远不够的, 我们这里从零开始, **用webpack, 手动配置一个独立的React开发环境** , 开发环境完成后, 支持自动构建, 自动刷新, sass语法 等功能...
 
+```
+项目依赖的下载： npm install
+
+项目的运行： npm run dev
+```
+
 #### 一、初始化环境
 ```
 mkdir react-webpack-demo
