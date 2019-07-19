@@ -18,11 +18,11 @@ npm install babel-preset-react -D
 
 #### 二、html静态文件
 
-#####1.在根目录下新建文件夹src, 在src内加入index.html  index.js
+##### 1.在根目录下新建文件夹src, 在src内加入index.html  index.js
 
-#####2.在根目录下新建webpack.config.js
+##### 2.在根目录下新建webpack.config.js
 
-#####3.在webpack.config.js中加入如下配置
+##### 3.在webpack.config.js中加入如下配置
 ```
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -61,13 +61,13 @@ module.exports = {
 }
 ```
 
-#####4. 在package.json内scripts中添加"dev": "webpack-dev-server"
+##### 4. 在package.json内scripts中添加"dev": "webpack-dev-server"
 
-#####5.在src/index.html中添加内容
-#####6.在命令行内运行npm run dev, 即可看到刚添加的index.html内容
-#####7.接下来我们配置babel对es6语法的支持, 以及对jsx语法的支持
+##### 5.在src/index.html中添加内容
+##### 6.在命令行内运行npm run dev, 即可看到刚添加的index.html内容
+##### 7.接下来我们配置babel对es6语法的支持, 以及对jsx语法的支持
 
-####三、添加对js高级语法的支持
+#### 三、添加对js高级语法的支持
 
 ##### 1.在项目根目录, 添加.babelrc配置文件 presets为语法配置,plugins为插件配置
 ```
@@ -77,7 +77,7 @@ module.exports = {
 }
 ```
 
-#####2.在webpack.config.js中添加module字段, 进行插件loader配置
+##### 2.在webpack.config.js中添加module字段, 进行插件loader配置
 ```
 // webpack.config.js
 module.exports = {
@@ -93,7 +93,7 @@ module.exports = {
 };
 ```
 
-#####3.在src/index.html中加入id为root的div节点
+##### 3.在src/index.html中加入id为root的div节点
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -112,7 +112,7 @@ module.exports = {
 </html>
 ```
 
-#####4.在src/index.js中加入包含jsx语法的react组件
+##### 4.在src/index.js中加入包含jsx语法的react组件
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -153,12 +153,12 @@ ReactDOM.render(<Counter /> , document.getElementById('root'))
 
 #### 四、可以添加语法的支持，例如sass
 
-#####1.安装sass相关的loader
+##### 1.安装sass相关的loader
 ```
 npm install style-loader css-loader node-sass sass-loader -D
 ```
 
-#####2.在webpack.config.js内新增规则
+##### 2.在webpack.config.js内新增规则
 ```
 // webpack.config.js
 module.exports = {
