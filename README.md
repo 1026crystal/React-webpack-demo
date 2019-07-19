@@ -176,6 +176,6 @@ module.exports = {
 };
 ```
 
-####3.在src内新增.scss文件，并在对应的js文件中import引入
+##### 3.在src内新增.scss文件，并在对应的js文件中import引入
 
 接下来我们就可以自己进行开发啦~~~~
