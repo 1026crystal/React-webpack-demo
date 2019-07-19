@@ -63,7 +63,7 @@ export default class MovieContainer extends Component  {
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}>
-            上海易教软件前端开发组
+            mini电影资源库
           </Footer>
         </Layout>
       </Router>
